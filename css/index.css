@@ -1,0 +1,6 @@
+.banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: url(../img/index/banner.jpg) no-repeat center top;
+}
