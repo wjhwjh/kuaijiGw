@@ -49,7 +49,7 @@ a:hover {
 }
 
 .p-bg {
-    background: #f7f7f7;
+    background: #fafafa;
 }
 
 
@@ -104,7 +104,8 @@ a:hover {
     background: url(../img/common/logo.png) no-repeat left top;
 }
 
-.nav-active .nav .logo {
+.nav-active .nav .logo,
+.nav-wrap-sub .nav .logo {
     background: url(../img/common/logo.png) no-repeat left bottom;
 }
 
@@ -178,13 +179,23 @@ a:hover {
     border-radius: 4px;
 }
 
-.nav-active .nav .nav-list li>a {
+.nav-active .nav .nav-list li>a,
+.nav-wrap-sub .nav .nav-list li>a {
     color: #000;
 }
 
-.nav-active .lang {
+.nav-active .lang,
+.nav-wrap-sub .lang {
     background: #ff6a00;
     border: 1px solid #ff6a00;
+}
+
+
+/* 子页面的导航 */
+
+.nav-wrap-sub {
+    height: 90px;
+    background: #fff;
 }
 
 
@@ -287,4 +298,31 @@ a:hover {
 .foot-wrap .foot-bottom .left p {
     color: #999;
     font-size: 14px;
+}
+
+
+/* 子页的标题 */
+
+.tit-wrap-subpage {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.tit-wrap-subpage h2 {
+    font-size: 30px;
+    color: #333;
+    position: relative;
+    font-weight: normal;
+}
+
+.tit-wrap-subpage h2::after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 60px;
+    height: 3px;
+    background: #ff6a00;
+    position: absolute;
+    bottom: -15PX;
+    left: 0;
 }
