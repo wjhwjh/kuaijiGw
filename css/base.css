@@ -306,6 +306,8 @@ a:hover {
 .tit-wrap-subpage {
     width: 100%;
     padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tit-wrap-subpage h2 {
@@ -325,4 +327,14 @@ a:hover {
     position: absolute;
     bottom: -15PX;
     left: 0;
+}
+
+.tit-wrap-subpage a {
+    font-size: 16px;
+    color: #666;
+}
+
+.tit-wrap-subpage a:hover {
+    color: #ff6a00;
+    transition: 0.3s;
 }
