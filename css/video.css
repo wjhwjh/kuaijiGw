@@ -1,0 +1,134 @@
+/* 视频专区 */
+
+.banner {
+    width: 100%;
+    height: 690px;
+    position: relative;
+    padding-top: 90px;
+    background: #000;
+}
+
+.banner-video {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    height: 500px;
+}
+
+.banner-video .left {
+    width: 800px;
+    position: relative;
+}
+
+.banner-video .left>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.banner-video .video-ul {
+    width: 380px;
+    background: #1c1c30;
+    padding: 20px;
+}
+
+.banner-video .video-ul li {
+    padding-bottom: 25px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.banner-video .video-ul li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-video .video-ul li .img {
+    flex: 0 0 150px;
+    width: 150px;
+}
+
+.banner-video .video-ul li p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.6;
+    padding-left: 15px;
+}
+
+.banner-video .video-ul li:hover a p {
+    color: #fff;
+}
+
+.videoConten {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.videoConten .cont-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.videoConten .cont-list li {
+    width: 380px;
+    /* height: 290px; */
+    margin-bottom: 40px;
+}
+
+.videoConten .cont-list li a {
+    display: block;
+}
+
+.videoConten .cont-list li .img {
+    width: 380px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoConten .cont-list li .img .playBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../img/news/videoPlayIcon.png) no-repeat 0 0;
+    right: 10px;
+    bottom: 10px;
+}
+
+.videoConten .cont-list li img {
+    display: block;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.videoConten .cont-list li:hover .img img {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.videoConten .cont-list li .des {
+    padding: 20px 0 0;
+}
+
+.videoConten .cont-list li .des h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: normal;
+    padding-bottom: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.videoConten .cont-list li:hover .des h3 {
+    color: #ff6a00;
+    transition: 0.3s;
+}
+
+
+/* 视频列表 */

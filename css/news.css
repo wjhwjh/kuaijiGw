@@ -178,6 +178,17 @@
     width: 380px;
     height: 240px;
     overflow: hidden;
+    position: relative;
+}
+
+.news-part2 .cont-list li .img .playBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../img/news/videoPlayIcon.png) no-repeat 0 0;
+    right: 10px;
+    bottom: 10px;
 }
 
 .news-part2 .cont-list li img {
