@@ -4,7 +4,7 @@ let $bannerVideoLeft = $('.banner-video .left > div'),
 console.log($bannerVideoLeft);
 $videoList.click(function() {
     let index = $(this).index();
-    console.log(index);
+    // console.log(index);
     $bannerVideoLeft.eq(index).siblings().fadeOut();
     $bannerVideoLeft.eq(index).fadeIn();
 });

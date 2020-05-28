@@ -340,4 +340,134 @@ a:hover {
 }
 
 
-/* 翻页样式 */
+/* 二级页面当当前位置 */
+
+.news-tab {
+    width: 100%;
+    height: 60px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ededed;
+    padding-top: 14px;
+}
+
+.news-tab ul li {
+    width: 134px;
+    text-align: left;
+    float: left;
+}
+
+.news-tab ul li a {
+    font-size: 16px;
+    color: #666;
+    width: 85px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.news-tab ul li.act a {
+    color: #fff;
+    background: #ff6a00;
+}
+
+.newsList-tab {
+    padding-top: 0;
+}
+
+.news-tab .location-tag {
+    font-size: 16px;
+    color: #666;
+    font-size: 16px;
+    color: #666;
+    height: 60px;
+    line-height: 60px;
+}
+
+.news-tab .location-tag span {
+    color: #ff6a00;
+}
+
+
+/* 分页 */
+
+.page-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+
+.page-wrap .page-cont {
+    display: flex;
+}
+
+.page-wrap .page-cont a {
+    width: 98px;
+    height: 38px;
+    display: block;
+    background: #f6f6f6;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
+
+.page-wrap .page-cont a::after {
+    content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    width: 8px;
+    height: 10px;
+    background: url(../img/news/pageIcon.png) no-repeat 0 0;
+    background-size: auto 100%;
+    left: 10px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.page-wrap .page-cont a.page-r-btn {
+    padding-right: 10px;
+}
+
+.page-wrap .page-cont a.page-r-btn::after {
+    left: auto;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.page-wrap .pageCount {
+    height: 38px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #333;
+    padding-left: 15px;
+}
+
+.page-wrap .page-cont .pageIndex>span {
+    width: 38px;
+    height: 38px;
+    background: #f6f6f6;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.page-wrap .page-cont .pageIndex>span:hover {
+    background: #ff6a00;
+    color: #fff;
+}
+
+.page-wrap .page-cont .pageIndex>span:nth-last-child(1) {
+    border-right: none;
+}
