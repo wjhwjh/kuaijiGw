@@ -1,0 +1,218 @@
+.banner {
+    width: 100%;
+    height: 590px;
+    position: relative;
+    padding-top: 90px;
+    background: url(../img/responsibility/resposibilityBanner.jpg) no-repeat center bottom;
+}
+
+
+/* part1 */
+
+.resposibilityWrap .part1 {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 70px;
+}
+
+.resposibilityWrap .part1 .cont-list li {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.resposibilityWrap .part1 .cont-list li:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.resposibilityWrap .part1 .cont-list li .left {
+    width: 140px;
+    flex: 0 0 140px;
+    position: relative;
+}
+
+.resposibilityWrap .part1 .cont-list li .left span {
+    width: 112px;
+    height: 36px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    background: #ff6a00;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 18px;
+}
+
+.resposibilityWrap .part1 .cont-list li .left::after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 1px;
+    height: 90%;
+    background: #e5e5e5;
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+
+.resposibilityWrap .part1 .cont-list li .left::before {
+    content: '';
+    display: block;
+    clear: both;
+    width: 16px;
+    height: 16px;
+    background: url(../img/responsibility/resposibilityIcon.jpg) no-repeat left 0;
+    position: absolute;
+    top: 0;
+    right: -8px;
+}
+
+.resposibilityWrap .part1 .cont-list li .right {
+    padding-left: 40px;
+}
+
+.resposibilityWrap .part1 .cont-list li .right>div {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.resposibilityWrap .part1 .cont-list li .right .img {
+    display: block;
+}
+
+.resposibilityWrap .part1 .cont-list li .right .des {
+    padding-left: 40px;
+}
+
+.resposibilityWrap .part1 .cont-list li .right .des h3 {
+    font-size: 22px;
+    color: #333;
+    padding: 5px 0 20px;
+}
+
+.resposibilityWrap .part1 .cont-list li .right .des p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+
+
+/* part2 */
+
+.resposibilityWrap .part2 {
+    padding-bottom: 70px;
+}
+
+.resposibilityWrap .part2 .cont {
+    width: 100%;
+    height: 326px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resposibilityWrap .part2 .cont .left {
+    width: 500px;
+    height: 326px;
+    position: relative;
+}
+
+.resposibilityWrap .part2 .cont .left a,
+.resposibilityWrap .part2 .cont .right li a {
+    display: block;
+}
+
+.resposibilityWrap .part2 .cont .left img {
+    width: 100%;
+    display: block;
+}
+
+.resposibilityWrap .part2 .cont .left .time-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background: #ff6a00;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.resposibilityWrap .part2 .cont .left .time-box span {
+    font-size: 13px;
+    display: block;
+    padding-top: 2px;
+}
+
+.resposibilityWrap .part2 .cont .left .title-wrap {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.resposibilityWrap .part2 .cont .right {
+    width: 660px;
+    padding-left: 20px;
+}
+
+.resposibilityWrap .part2 .cont .right li {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.resposibilityWrap .part2 .cont .right li:nth-child(1) {
+    margin-top: 0;
+}
+
+.resposibilityWrap .part2 .cont .right li:nth-last-child(1) {
+    border-bottom: 0;
+}
+
+.resposibilityWrap .part2 .cont .right li p {
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 13px;
+    transition: 0.3s;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.resposibilityWrap .part2 .cont .right li a span {
+    font-size: 15px;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+.resposibilityWrap .part2 .cont .right li:hover p {
+    color: #ff6a00;
+    transition: 0.3s;
+}
+
+.resposibilityWrap .part2 .cont .right li .tag {
+    width: 70px;
+    flex: 0 0 70px;
+    border-right: 1px solid #dddddd;
+    font-size: 44px;
+    color: #a5a5a5;
+    margin-right: 20px;
+}
+
+.resposibilityWrap .part2 .cont .right li .tag span {
+    display: block;
+    font-size: 13px;
+}
