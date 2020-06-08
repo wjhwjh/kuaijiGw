@@ -50,11 +50,11 @@
     <div class="banner m-width"></div>
 
     <!-- 内容 -->
-    <div class="wrap">
+    <div class="wrap newsWrap">
         <!--  切换定位 -->
         <div class="news-tab">
             <div class="contener">
-                <ul>
+                <ul id="newsTab">
                     <li class="act"><a href="javascript:()">企业动态</a></li>
                     <li><a href="javascript:()">视频专区</a></li>
                     <li><a href="javascript:()">社交媒体</a></li>
@@ -265,6 +265,23 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/news.js"></script>
+
+    <script>
+        let $newsTab = $('#newsTab li');
+        let newsPart1 = $('.newsWrap .news-part1').offset().top,
+            newsPart2 = $('.newsWrap .news-part2').offset().top,
+            newsPart3 = $('.newsWrap .news-part3').offset().top;
+        let newsOffset = [newsPart1, newsPart2, newsPart3];
+
+        $newsTab.click(function() {
+            let index = $(this).index();
+            $(this).addClass('act').siblings().removeClass('act');
+            $('html,body').animate({
+                scrollTop: newsOffset[index]
+            }, 600)
+
+        });
+    </script>
 </body>
 
 </html>
