@@ -1,0 +1,242 @@
+    .centerTitWrap {
+        padding: 70px 0 50px;
+        font-weight: normal;
+    }
+    
+    .centerTitWrap span {
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        color: #333;
+        height: 50px;
+    }
+    
+    .centerTitWrap span::after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 60px;
+        height: 3px;
+        background: #ff6a00;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -30px;
+    }
+    
+    .centerTitWrap p {
+        text-align: center;
+        font-size: 15px;
+        color: #666666;
+        margin-top: 24px;
+    }
+    /* 英才招聘 */
+    
+    .recuitBanner {
+        width: 100%;
+        height: 390px;
+        position: relative;
+        padding-top: 90px;
+        background: url(../img/recruit/recuitBanner.jpg) no-repeat center bottom;
+    }
+    
+    .recruitWrap .part1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 0 100px;
+    }
+    
+    .recruitWrap .part1 .left {
+        width: 562px;
+        height: 400px;
+    }
+    
+    .recruitWrap .part1 .right {
+        width: 570px;
+        padding-top: 60px;
+    }
+    
+    .recruitWrap .part1 .right p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.7;
+        padding-bottom: 30px;
+    }
+    
+    .recruitWrap .part1 .right p span {
+        font-weight: bold;
+    }
+    
+    .recruitWrap .part1 .right p:nth-child(3) {
+        padding-bottom: 0;
+    }
+    /* part2 */
+    
+    .recruitWrap .part2 {
+        background: #f5f5f5;
+        padding-bottom: 70px;
+    }
+    
+    .recruitWrap .part2 ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .recruitWrap .part2 ul li {
+        flex: 0 0 220px;
+        height: 150px;
+        background: #fff;
+        margin-bottom: 25px;
+        padding-top: 35px;
+        text-align: center;
+    }
+    
+    .recruitWrap .part2 ul li:nth-of-type(n+10) {
+        margin-bottom: 0;
+    }
+    
+    .recruitWrap .part2 ul li p {
+        font-size: 22px;
+        color: #333333;
+        padding-bottom: 20px;
+    }
+    
+    .recruitWrap .part2 ul li span {
+        width: 116px;
+        height: 30px;
+        background: #ff6a00;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+        display: block;
+        margin: auto;
+    }
+    /* part3 */
+    
+    .recruitWrap .part3 {
+        padding-bottom: 70px;
+    }
+    
+    .recruitWrap .part3 .img {
+        text-align: center;
+    }
+    
+    .recruitWrap .part3 .des {
+        text-align: center;
+        padding-top: 55px;
+    }
+    
+    .recruitWrap .part3 .des p {
+        font-size: 16px;
+        color: #333;
+        padding-bottom: 25px;
+    }
+    
+    .recruitWrap .part3 .des p:nth-last-child(1) {
+        padding-bottom: 0;
+    }
+    
+    .recruitWrap .part3 .des p span {
+        color: #ff6a00;
+        font-weight: bold;
+    }
+    /* 企业文化 */
+    
+    .cultureBanner {
+        width: 100%;
+        height: 390px;
+        position: relative;
+        padding-top: 90px;
+        background: url(../img/recruit/recuitBanner.jpg) no-repeat center bottom;
+    }
+    
+    .cultureWrap .part1,
+    .cultureWrap .part2 {
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 70px;
+    }
+    
+    .cultureWrap .part3 {
+        padding-bottom: 70px;
+    }
+    
+    .cultureWrap .part1 .img {
+        text-align: center;
+    }
+    
+    .cultureWrap .part2 .img {
+        text-align: center;
+    }
+    
+    .cultureWrap .part2 .des {
+        text-align: center;
+        padding-top: 55px;
+    }
+    
+    .cultureWrap .part2 .des p {
+        font-size: 16px;
+        color: #333;
+        padding-bottom: 25px;
+    }
+    
+    .cultureWrap .part2 .des p:nth-last-child(1) {
+        padding-bottom: 0;
+    }
+    
+    .cultureWrap .part2 .des p span {
+        color: #ff6a00;
+        font-weight: bold;
+    }
+    /* part3 */
+    
+    .cultureWrap .part3 {
+        padding: 70px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cultureWrap .part3 .left {
+        width: 783px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cultureWrap .part3 .left ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 0 0 500px;
+    }
+    
+    .cultureWrap .part3 .left ul li {
+        flex: 0 0 237px;
+        margin-bottom: 25px;
+    }
+    
+    .cultureWrap .part3 .left ul li:nth-child(3),
+    .cultureWrap .part3 .left ul li:nth-child(4) {
+        margin-bottom: 0;
+    }
+    
+    .cultureWrap .part3 .left ul li img {
+        display: block;
+    }
+    
+    .cultureWrap .part3 .left>div {}
+    
+    .cultureWrap .part3 .right {
+        width: 370px;
+    }
+    
+    .cultureWrap .part3 .right p {
+        font-size: 20px;
+        color: #333;
+        padding-bottom: 15px;
+    }
+    
+    .cultureWrap .part3 .right .tit-wrap-subpage {
+        padding: 30px 0 40px;
+    }
