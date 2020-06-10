@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    height: 500px;
+    height: 550px;
 }
 
 .banner-video .left {
@@ -142,7 +142,16 @@
     height: 390px;
     position: relative;
     padding-top: 90px;
-    background: url(../img/video/videoListBanner.jpg) no-repeat center bottom;
+    /* background: url(../img/video/videoListBanner.jpg) no-repeat center bottom; */
+}
+
+.videoListbanner .img {
+    position: absolute;
+    width: 1920px;
+    height: 300px;
+    left: 50%;
+    top: 90px;
+    margin-left: -960px;
 }
 
 .videoList li {

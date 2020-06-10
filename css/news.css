@@ -5,7 +5,16 @@
     height: 390px;
     position: relative;
     padding-top: 90px;
-    background: url(../img/news/newsBanner.jpg) no-repeat center bottom;
+    /* background: url(../img/news/newsBanner.jpg) no-repeat center bottom; */
+}
+
+.banner .img {
+    position: absolute;
+    width: 1920px;
+    height: 300px;
+    left: 50%;
+    top: 90px;
+    margin-left: -960px;
 }
 
 

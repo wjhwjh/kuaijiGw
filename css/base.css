@@ -3,6 +3,7 @@ body {
     font-size: 14px;
     font-family: 'Microsoft YaHei', Verdana, Arial, Helvetica, sans-serif;
     color: #333333;
+    overflow-x: hidden;
 }
 
 ul,
@@ -196,6 +197,7 @@ a:hover {
 .nav-wrap-sub {
     height: 90px;
     background: #fff;
+    padding-top: 24px;
 }
 
 

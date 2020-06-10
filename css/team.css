@@ -3,7 +3,15 @@
     height: 390px;
     position: relative;
     padding-top: 90px;
-    background: url(../img/team/teamBanner.jpg) no-repeat center bottom;
+}
+
+.banner .img {
+    position: absolute;
+    width: 1920px;
+    height: 300px;
+    left: 50%;
+    top: 90px;
+    margin-left: -960px;
 }
 
 .teamWrap .part1 {
@@ -59,40 +67,121 @@
     padding-bottom: 70px;
 }
 
-.teamWrap .part2 ul {
+.part2 .cont-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.teamWrap .part2 li {
-    flex: 0 0 260px;
-    height: 368px;
+.part2 .cont-list li {
+    width: 260px;
+    height: 370px;
     background: #fafafa;
-    margin-bottom: 30px;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+.part2 .cont-list li a {
+    display: block;
+}
+
+.part2 .cont-list li .img {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+}
+
+.part2 .cont-list li img {
+    display: block;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.part2 .cont-list li:hover .img img {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.part2 .cont-list li .des {
+    padding: 20px 10px 0;
     text-align: center;
 }
 
-.teamWrap .part2 li:nth-of-type(n+5) {
-    margin-bottom: 0;
-}
-
-.teamWrap .part2 li img {
-    display: block;
-}
-
-.teamWrap .part2 li h3 {
+.part2 .cont-list li .des p {
     font-size: 20px;
     color: #333;
-    padding: 15px 0 13px;
+    padding-bottom: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
 }
 
-.teamWrap .part2 li p {
+.part2 .cont-list li .des span {
     font-size: 16px;
     color: #666;
+    display: block;
+    padding-bottom: 10px;
 }
 
-.teamWrap .part2 li p span {
+.part2 .cont-list li:hover .des p,
+.part2 .cont-list li:hover .des span {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.part2 .cont-list li:hover {
+    background: #ff6a00;
+    transition: 0.3s;
+}
+
+.part2 .teach-box .des-box {
+    background: #fffbf8;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 40px;
+    height: 200px;
     display: block;
-    padding-top: 5px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.part2 .teach-box .des-box.act {
+    display: none;
+}
+
+.part2 .teach-box .des-box .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url(../img/about/close.png) no-repeat 0 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.part2 .teach-box .des-box h3 {
+    font-size: 26px;
+    color: #ff6a00;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.part2 .teach-box .des-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+}
+
+.part2 .teach-box .des-text {
+    position: absolute;
+    padding: 30px 35px;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.part2 .teach-box .des-text:nth-child(0) {
+    display: block;
 }
