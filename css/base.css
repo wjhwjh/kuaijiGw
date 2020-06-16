@@ -387,13 +387,24 @@ a:hover {
 .news-tab .location-tag {
     font-size: 16px;
     color: #666;
-    font-size: 16px;
     color: #666;
     height: 60px;
     line-height: 60px;
 }
 
-.news-tab .location-tag span {
+.news-tab .location-tag span a {
+    font-size: 16px;
+    color: #666;
+}
+
+.news-tab .location-tag>a h1 {
+    font-size: 16px;
+    color: #ff6a00;
+    display: inline;
+    font-weight: normal;
+}
+
+.news-tab .location-tag a:hover {
     color: #ff6a00;
 }
 
@@ -407,7 +418,8 @@ a:hover {
     padding-bottom: 70px;
 }
 
-.page-wrap .page-cont {
+
+/* .page-wrap .page-cont {
     display: flex;
 }
 
@@ -474,10 +486,82 @@ a:hover {
 .page-wrap .page-cont .pageIndex>span:hover {
     background: #ff6a00;
     color: #fff;
-}
+} */
 
 .page-wrap .page-cont .pageIndex>span:nth-last-child(1) {
     border-right: none;
+}
+
+.page-wrap li:nth-child(1) a {
+    width: 98px;
+    height: 38px;
+    display: block;
+    background: #f6f6f6;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
+
+.page-wrap li:nth-child(1) a::after,
+.page-wrap li:last-child a::after {
+    content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    width: 8px;
+    height: 10px;
+    background: url(../img/news/pageIcon.png) no-repeat 0 0;
+    background-size: auto 100%;
+    left: 10px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.page-wrap li.currentPage a {
+    width: 38px;
+    height: 38px;
+    background: #f6f6f6;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.page-wrap li.currentPage a:hover {
+    background: #ff6a00;
+    color: #fff;
+}
+
+.page-wrap li:last-child a {
+    width: 98px;
+    height: 38px;
+    display: inline-block;
+    background: #f6f6f6;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    border-left: 0;
+}
+
+.page-wrap li:last-child a::after {
+    left: auto;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.page-wrap li:last-child>div {
+    display: inline-block;
 }
 
 
