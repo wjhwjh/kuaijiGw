@@ -420,6 +420,7 @@
 
 .part5 .cont-wrap .cont>div:nth-child(1) {
     display: block;
+    left: 9px;
 }
 
 .part5 .cont-wrap .cont>div img {
@@ -431,13 +432,13 @@
 /* *************** */
 
 .part5Cont {
-    width: 1008px;
+    width: 1144px;
 }
 
 .part5Cont .main {
     margin: 0 auto;
-    width: 1008px;
-    transform: scale(1.14);
+    width: 1154px;
+    /* transform: scale(1.14); */
     transform-origin: center 0;
 }
 
@@ -453,7 +454,7 @@
 
 .part5Cont .ctn {
     float: left;
-    width: 502px;
+    width: 572px;
 }
 
 .part5Cont .ctn1 {
@@ -472,18 +473,18 @@
 }
 
 .part5Cont .box.big {
-    width: 244px;
-    height: 244px;
+    width: 278px;
+    height: 278px;
 }
 
 .part5Cont .box.middle {
-    width: 244px;
-    height: 117px;
+    width: 278px;
+    height: 134px;
 }
 
 .part5Cont .box.small {
-    width: 117px;
-    height: 117px;
+    width: 134px;
+    height: 134px;
 }
 
 .part5Cont .box img {
@@ -491,18 +492,18 @@
 }
 
 .part5Cont .box.big img {
-    width: 244px;
-    height: 244px;
+    /* width: 244px;
+    height: 244px; */
 }
 
 .part5Cont .box.middle img {
-    width: 244px;
-    height: 117px;
+    /* width: 244px;
+    height: 117px; */
 }
 
 .part5Cont .box.small img {
-    width: 117px;
-    height: 117px;
+    /* width: 117px;
+    height: 117px; */
 }
 
 .part5Cont .box .info {
